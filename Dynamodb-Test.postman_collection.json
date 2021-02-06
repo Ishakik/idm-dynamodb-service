@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "0b8254c6-782d-40ba-9db4-d49d0e3ecccb",
+		"name": "Dynamodb-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read-IdmUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read-All-IdmUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-IdMUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"123456\",\r\n    \"company\": \"TCS\",\r\n    \"email\": \"abc@tcs.com\",\r\n    \"phone\": \"+91-868645-53-62\",\r\n    \"firstName\": \"Foo\",\r\n    \"lastName\": \"Bar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/IdMUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"IdMUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update IdMUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"1\",\r\n    \"company\": \"TCS\",\r\n    \"email\": \"abc@tcs.com\",\r\n    \"phone\": \"+91-868645-53-62\",\r\n    \"firstName\": \"Foo\",\r\n    \"lastName\": \"Bar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/IdMUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"IdMUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-IdMUser2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountId\": \"123456\",\r\n    \"company\": \"TCS\",\r\n    \"email\": \"abc@tcs.com\",\r\n    \"phone\": \"+91-868645-53-62\",\r\n    \"firstName\": \"Foo\",\r\n    \"lastName\": \"Bar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/IdMUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"IdMUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"root\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/IdMUser/123456/IdMRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"IdMUser",
+						"123456",
+						"IdMRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-IdMUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
